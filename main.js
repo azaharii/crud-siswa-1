@@ -10,3 +10,12 @@ import {
   doc,
   getDoc
 } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js"
+// GANTI DENGAN FIREBASE CONFIG ANDA
+const firebaseConfig = {
+  apiKey: "AIzaSyBMSsNz6Dgss5vr8vlPbDdKgwOIn3dMBik",
+  authDomain: "insancemerlang2025.firebaseapp.com",
+  projectId: "insancemerlang2025",
+  storageBucket: "insancemerlang2025.firebasestorage.app",
+  messagingSenderId: "900746896855",
+  appId: "1:900746896855:web:20cfd37822398ef034d792"
+}
