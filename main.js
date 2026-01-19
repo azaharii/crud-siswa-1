@@ -23,3 +23,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)
 const filmCollection = collection(db, "film")
+
+// fungsi untuk menampilkan daftar film dan drama
+export async function daftarFilm () {
+  
+}
