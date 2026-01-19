@@ -28,6 +28,22 @@
 
       <a href="daftar.html">Daftar Film</a>
     </div>
+    
+    <script type="module">
+      import { tambahFilm } from './main.js'
+
+      // mengirimkan data film dari form
+      const formTambah = document.getElementById('formTambah')
+
+      // event ketika form disubmit (dikirim)
+      formTambah.addEventListener('submit', function (e) {
+        // mencegah reload halaman
+        e.preventDefault()
+
+        // eksekusi fungsi tambah data film
+        tambahFilm()
+      })
+    </script>
 </body>
 
 </html>

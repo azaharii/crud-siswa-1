@@ -25,6 +25,22 @@ const db = getFirestore(app)
 const filmCollection = collection(db, "film")
 
 // fungsi untuk menampilkan daftar film dan drama
+
 export async function daftarFilm () {
   
+  // ambil nilai dari form
+  
+  const judul = document.getElementById('judul').value
+  const sinopsis = document.getElementById('sinopsis').value
+  const aktor = document.getElementById('aktor').value
+
+  // tambahkan data ke firestore
+  await addDoc(filmCollection, {
+    judul: judul,
+    sinopsis: sinopsis,
+    aktor: aktor
+  })
+
+  // alihkan ke halaman daftar film
+  window.location.href = 'daftar.html'
 }
