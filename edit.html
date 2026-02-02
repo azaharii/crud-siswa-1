@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>edit film</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="container">
+    <h1>form ubah film</h1>
+
+    <form id="formubah">
+      <label>judul</label>
+      <input type="text" id="judul">
+
+      <label>sinopsis</label>
+      <input type="text" id="sinopsis">
+
+      <label>aktor</label>
+      <input type="text" id="aktor">
+
+      <button id="tombol" type="submit">simpan</button>
+      <br><br>
+      <a href="daftar.html">daftar film</a>
+    </form>
+  </div>
+
+  <script type="module">
+    import { ambildatafilm, ubahdatafilm } from './main.js'
+
+    // mengambil id dari url
+    const urlparams = new URLSearchParams(window.location.search)
+    const idfilm = urlparams.get('id')
+
+    // mengambil data film
+    const film = await ambildatafilm(idfilm)
+
+    // mengisi form
+    document.getElementById('judul').value = film.judul
+    document.getElementById('sinopsis').value = film.sinopsis
+    document.getElementById('aktor').value = film.aktor
+
+    const formubah = document.getElementById('formubah')
+    formubah.addEventListener('submit', function (e) {
+      e.preventDefault()
+
+      const judul = document.getElementById('judul').value
+      const sinopsis = document.getElementById('sinopsis').value
+      const aktor = document.getElementById('aktor').value
+
+      ubahdatafilm(idfilm, judul, sinopsis, aktor)
+    })
+  </script>
+</body>
+</html>
