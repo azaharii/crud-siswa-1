@@ -1,6 +1,6 @@
 body {
   font-family: rial, sans-serif;
-  background: #f4f;
+  background: #f4f4f4;
   padding: 10px;
 }
 
@@ -10,5 +10,283 @@ body {
 }
 
 .judulberwarna {
-  color: #ff1494;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: skyblue;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+button.delete {
+  background: #dc3545;
+}
+
+button.edit {
+  background: #ffc107;
+  color: black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+a.button.secondary {
+  background: #6c757d;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #7dd3fc, #38bdf8);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Card Form */
+form {
+  max-width: 420px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Judul */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #334155;
+}
+
+/* Input */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+/* Fokus input */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56,189,248,0.3);
+}
+
+/* Tombol */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37,99,235,0.4);
+}
+
+/* Link daftar film */
+a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Judul */
+h1, h2 {
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+/* Tombol atas */
+a, button {
+  text-decoration: none;
+}
+
+.tombol {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.tambah {
+  background: #2563eb;
+  color: #fff;
+}
+
+.awal {
+  color: #2563eb;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Header tabel */
+th {
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 14px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Isi tabel */
+td {
+  padding: 14px;
+  text-align: center;
+  color: #334155;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Hover baris */
+tr:hover {
+  background: #f8fafc;
+}
+
+/* Kolom judul lebih tegas */
+td:first-child {
+  font-weight: 600;
+  color: #020617;
+}
+
+/* Tombol aksi */
+.edit {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.hapus {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #ef4444;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Responsive HP */
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    padding: 10px;
+  }
+
+  td {
+    text-align: left;
+    border: none;
+    padding: 8px 10px;
+  }
+
+  td::before {
+    font-weight: bold;
+    color: #2563eb;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  td:nth-child(1)::before { content: "Judul"; }
+  td:nth-child(2)::before { content: "Sinopsis"; }
+  td:nth-child(3)::before { content: "Aktor"; }
+  td:nth-child(4)::before { content: "Aksi"; }
 }
